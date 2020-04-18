@@ -35,7 +35,7 @@
     // echo $addedTax;
     echo tax_calc($amount,$taxRate);
 
-    function tax_calc($amount,$taxRate){
+    function tax_calc($amount,$tax){
       $calculate_tax = $amount*$tax;
       $amount = round($amount+$calculate_tax,2);
       return $amount;
